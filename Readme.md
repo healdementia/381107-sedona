@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Марина Кузнецова](https://up.htmlacademy.ru/adaptive/12/user/381107).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Собакарь](https://htmlacademy.ru/profile/id128451).
 
 ---
 
