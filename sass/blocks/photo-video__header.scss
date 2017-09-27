@@ -1,0 +1,11 @@
+.photo-video__header {
+  @include inner-header();
+}
+
+.photo-video__headline {
+  @include inner-headline();
+}
+
+.photo-video__subline {
+  @include inner-subline();
+}

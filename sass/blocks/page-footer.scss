@@ -1,0 +1,13 @@
+.page-footer {
+  text-align: center;
+
+  &__headline{
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.page-footer__map img {
+  display: block;
+  margin-bottom: 40px;
+}

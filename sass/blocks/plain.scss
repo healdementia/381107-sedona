@@ -1,0 +1,23 @@
+.plain-headline {
+  @include headline();
+  color: $accent-color;
+  line-height: 26px;
+}
+
+.plain-subline {
+  @include text();
+  color: $text-color;
+  line-height: 24px;
+}
+
+.plain-text {
+  @include text();
+  color: $text-color;
+  line-height: 21px;
+}
+
+.plain-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

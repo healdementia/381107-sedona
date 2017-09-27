@@ -1,0 +1,32 @@
+.form__fieldset {
+  padding: 20px 0;
+  border: 0;
+  border-bottom: 1px solid $form-border;
+}
+
+.form__legend {
+  @include headline();
+  padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__label--text {
+  line-height: 26px;
+}
+
+.form__input--text, .form__textarea,
+.form__label--radio, .form__label--checkbox {
+  font-family: $bold-font;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  color: $accent-color;
+  text-transform: none;
+}
+
+.form__input--text, .form__textarea {
+  background-color: $input-bg;
+  border: none;
+}
