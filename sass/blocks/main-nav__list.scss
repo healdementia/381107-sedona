@@ -4,6 +4,7 @@
 
 .main-nav__item {
   position: relative;
+
   @include headline;
   line-height: 40px;
   text-align: center;
@@ -12,13 +13,13 @@
   border-top: 1px solid $border-top-color;
   border-bottom: 1px solid $border-bottom-color;
 
-&:first-child {
-  border-top: none;
-}
+  &:first-child {
+    border-top: none;
+  }
 
-&:last-child {
-  border-bottom: none;
-}
+  &:last-child {
+    border-bottom: none;
+  }
 
   a {
     color: $light-text-color;
@@ -29,12 +30,14 @@
     background-color: $button-hover-bg;
   }
 
-  &:focus, &:active {
+  &:focus,
+  &:active {
     background-color: $button-down-bg;
   }
 
-  &:focus a, &:active a {
-      color: rgba($light-text-color, 0.3);
+  &:focus a,
+  &:active a {
+    color: rgba($light-text-color, 0.3);
   }
 }
 

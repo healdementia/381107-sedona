@@ -2,6 +2,10 @@
   padding: 20px 0;
   border: 0;
   border-bottom: 1px solid $form-border;
+
+  &:last-child {
+    text-align: center;
+  }
 }
 
 .form__legend {
@@ -16,8 +20,10 @@
   line-height: 26px;
 }
 
-.form__input--text, .form__textarea,
-.form__label--radio, .form__label--checkbox {
+.form__input--text,
+.form__textarea,
+.form__label--radio,
+.form__label--checkbox {
   font-family: $bold-font;
   padding: 20px;
   font-size: 18px;
@@ -26,7 +32,8 @@
   text-transform: none;
 }
 
-.form__input--text, .form__textarea {
+.form__input--text,
+.form__textarea {
   background-color: $input-bg;
   border: none;
 }

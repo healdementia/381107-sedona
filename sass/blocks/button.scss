@@ -14,7 +14,8 @@
     background-color: $button-hover-bg;
   }
 
-  &:focus, &:active {
+  &:focus,
+  &:active {
     color: rgba($light-text-color, 0.3);
     background-color: $button-down-bg;
   }
