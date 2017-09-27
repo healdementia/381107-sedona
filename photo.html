@@ -4,36 +4,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - фото и видео</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__top">
           <ul class="main-nav__list plain-list">
-            <li class="plain-list__item plain-list__item--active">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="index.html">Главная</a>
-              <button class="main-nav__close-menu" type="button">Закрыть меню</button>
+              <button class="main-nav__switch main-nav__switch--close" type="button">Закрыть меню</button>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item main-nav__item--active plain-list__item">
               <a class="main-nav__link">Фото и видео</a>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-pic" src="http://placehold.it/150x100" alt="City of Sedona" width="103" height="85">
-        </a>
-        <button class="main-nav__open-menu" type="button">Открыть меню</button>
+        <div class="main-nav__bottom">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-pic" src="http://placehold.it/150x100" alt="City of Sedona" width="103" height="85">
+          </a>
+          <button class="main-nav__switch main-nav__switch--open" type="button">Открыть меню</button>
+        </div>
       </nav>
       <div class="page-header__intro">
-        <img class="page-header__intro-pic" src="http://placehold.it/150x100" alt="Пейзаж Седоны" width="228" height="40">
+        <img class="page-header__intro-pic" src="img/text-sedona.svg" alt="Пейзаж Седоны" width="228" height="40">
       </div>
     </header>
 
@@ -48,46 +51,56 @@
         </header>
         <div class="photo-video__wrapper gallery">
           <figure class="gallery__item photo">
-            <img class="photo__pic" src="http://placehold.it/150x100" alt="Дорога на рассвете" width="280" height="280">
-            <figcaption class="photo__caption">
-              Народные просторы
-            </figcaption>
-            <p class="photo__author">Автор фото: Борис</p>
-            <p class="photo__like-counter">1350</p>
+            <div class="container">
+              <img class="photo__pic" src="http://placehold.it/150x100" alt="Дорога на рассвете" width="280" height="280">
+              <figcaption class="photo__caption">
+                Неродные просторы
+              </figcaption>
+              <p class="photo__author">Автор фото: Борис</p>
+              <p class="photo__like-counter">1350</p>
+            </div>
           </figure>
           <figure class="gallery__item photo">
-            <img class="photo__pic" src="http://placehold.it/150x100" alt="Необычный кактус" width="280" height="280">
-            <figcaption class="photo__caption">
-              Местная растительность
-            </figcaption>
-            <p class="photo__author">Автор фото: Сергей</p>
-            <p class="photo__like-counter">143</p>
+            <div class="container">
+              <img class="photo__pic" src="http://placehold.it/150x100" alt="Необычный кактус" width="280" height="280">
+              <figcaption class="photo__caption">
+                Местная растительность
+              </figcaption>
+              <p class="photo__author">Автор фото: Сергей</p>
+              <p class="photo__like-counter">143</p>
+            </div>
           </figure>
           <figure class="gallery__item photo">
-            <img class="photo__pic" src="http://placehold.it/150x100" alt="Дорога в горах среди деревьев" width="280" height="280">
-            <figcaption class="photo__caption">
-              Дорога на север
-            </figcaption>
-            <p class="photo__author">Автор фото: Пётр</p>
-            <p class="photo__like-counter">96</p>
+            <div class="container">
+              <img class="photo__pic" src="http://placehold.it/150x100" alt="Дорога в горах среди деревьев" width="280" height="280">
+              <figcaption class="photo__caption">
+                Дорога на север
+              </figcaption>
+              <p class="photo__author">Автор фото: Пётр</p>
+              <p class="photo__like-counter">96</p>
+            </div>
           </figure>
           <figure class="gallery__item photo">
-            <img class="photo__pic" src="http://placehold.it/150x100" alt="Горы Аризоны" width="280" height="280">
-            <figcaption class="photo__caption">
-              Мост Дьявола
-            </figcaption>
-            <p class="photo__author">Автор фото: Антон</p>
-            <p class="photo__like-counter">254</p>
+            <div class="container">
+              <img class="photo__pic" src="http://placehold.it/150x100" alt="Горы Аризоны" width="280" height="280">
+              <figcaption class="photo__caption">
+                Мост Дьявола
+              </figcaption>
+              <p class="photo__author">Автор фото: Антон</p>
+              <p class="photo__like-counter">254</p>
+            </div>
           </figure>
         </div>
         <div class="photo-video__wrapper video">
-          <b class="photo-video__headline plain-headline">Всё ещё сомневаетесь?</b>
-          <p class="photo-video__subline plain-subline">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <video controls>
-            <source src="video.mp4" type="video/mp4">
-            <source src="video.ogv" type="video/ogg">
-            <source src="video.webm" type="video/webm">
-          </video>
+          <div class="container">
+            <b class="photo-video__headline plain-headline">Всё ещё сомневаетесь?</b>
+            <p class="photo-video__subline plain-subline">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <video controls>
+              <source src="video.mp4" type="video/mp4">
+              <source src="video.ogv" type="video/ogg">
+              <source src="video.webm" type="video/webm">
+            </video>
+          </div>
         </div>
       </section>
 
