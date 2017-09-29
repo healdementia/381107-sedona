@@ -1,0 +1,31 @@
+.photo {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+
+  &__caption {
+    padding-top: 20px;
+    color: $accent-color;
+    text-transform: uppercase;
+    font-family: $bold-font;
+  }
+
+  &__author {
+    margin: 0;
+    padding-top: 6px;
+    color: $text-color;
+    text-transform: none;
+  }
+
+  &__like-counter {
+    margin: 0;
+    padding-top: 6px;
+    padding-left: 38px;
+    color: $accent-color;
+    font-family: $bold-font;
+    background-image: $like;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: left;
+  }
+}

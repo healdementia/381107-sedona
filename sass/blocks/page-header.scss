@@ -1,0 +1,29 @@
+//////////// p r o m o ////////////
+
+.page-header__promo {
+  min-height: 390px;
+  padding-top: 90px;
+  box-sizing: border-box;
+
+  @include back-bg();
+}
+
+.page-header__promo-pic {
+  display: block;
+  margin: 0 auto;
+}
+
+//////////// i n t r o ////////////
+
+.page-header__intro {
+  min-height: 158px;
+  padding-top: 52px;
+  box-sizing: border-box;
+
+  @include back-bg();
+}
+
+.page-header__intro-pic {
+  display: block;
+  margin: 0 auto;
+}

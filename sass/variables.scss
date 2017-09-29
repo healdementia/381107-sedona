@@ -1,0 +1,70 @@
+//////////// c o l o r s ////////////
+
+$blue: #81b3d2;
+$bg: #ffffff;
+$info-bg: #eeeeee;
+$footer-bg: #fefefe;
+
+$theme-color: $blue;
+
+$input-bg: #f2f2f2;
+$input-hover-bg: #e5e5e5;
+$input-icon-bg: #e6e6e6;
+$input-down-bg: #d5d5d5;
+$input-down-check: #a4a4a4;
+
+$accent-color: #000000;
+$text-color: #333333;
+$light-text-color: #ffffff;
+
+$main-menu-active-color: #766357;
+$main-menu-active-hover-color: #604e43;
+
+$border-top-color: #678fa8;
+$border-bottom-color: #9ac2db;
+$reasons-border: #d6d6d6;
+$form-border: #e5e5e5;
+
+$button-bg: $theme-color;
+$button-hover-bg: #669ec0;
+$button-down-bg: #5496bd;
+$button-disabled-bg: #e5e5e5;
+
+$video-control-bg: #5c6870;
+$video-control-hover-bg: #333333;
+$video-control-down-bg: #c1c1c1;
+
+//////////// i m a g e s ////////////
+
+$close-menu: url("../img/icon-cross.svg");
+$open-menu: url("../img/icon-menu.svg");
+
+$header-intro-bg: url("../img/bg-back-mobile@1x.jpg");
+
+$housing: url("../img/icon-house.svg");
+$souvenirs: url("../img/icon-gift.svg");
+$food: url("../img/icon-burger.svg");
+
+$like: url("../img/icon-like.svg");
+
+//////////// f o n t s ////////////
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff");
+  src: url("../fonts/ptsans.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/ptsansbold.woff");
+  src: url("../fonts/ptsansbold.woff2");
+  font-weight: 700;
+}
+
+$regular-font: "PT Sans", sans-serif;
+$bold-font: "PT Sans Bold", sans-serif;
+$headline-size: 18px;
+$headline-height: 26px;
+$text-size: 14px;

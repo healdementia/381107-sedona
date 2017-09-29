@@ -1,0 +1,26 @@
+.button {
+  font-family: $bold-font;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: $light-text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $button-bg;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($light-text-color, 0.3);
+    background-color: $button-down-bg;
+  }
+
+  &--disabled {
+    background-color: $button-disabled-bg;
+  }
+}

@@ -1,0 +1,34 @@
+@mixin headline() {
+  font-family: $bold-font;
+  font-size: $headline-size;
+}
+
+@mixin text() {
+  font-family: $regular-font;
+  font-size: $text-size;
+}
+
+@mixin back-bg() {
+  background-color: $bg;
+  background-image: $header-intro-bg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin inner-header() {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $form-border;
+}
+
+@mixin inner-headline {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@mixin inner-subline {
+  font-size: $text-size;
+  line-height: 24px;
+}

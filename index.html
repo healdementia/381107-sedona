@@ -3,37 +3,41 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
 
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__top">
           <ul class="main-nav__list plain-list">
-            <li class="plain-list__item plain-list__item--active">
+            <li class="main-nav__item main-nav__item--active plain-list__item">
               <a class="main-nav__link">Главная</a>
-              <button class="main-nav__close-menu" type="button">Закрыть меню</button>
+              <button class="main-nav__switch main-nav__switch--close" type="button">Закрыть меню</button>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="plain-list__item">
+            <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
             </li>
           </ul>
         </div>
-        <a class="main-nav__logo">
-          <img class="main-nav__logo-pic" src="http://placehold.it/150x100" alt="City of Sedona" width="103" height="85">
-        </a>
-        <button class="main-nav__open-menu" type="button">Открыть меню</button>
+        <div class="main-nav__bottom">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-pic" src="http://placehold.it/150x100" alt="City of Sedona" width="103" height="85">
+          </a>
+          <button class="main-nav__switch main-nav__switch--open" type="button">Открыть меню</button>
+        </div>
       </nav>
       <div class="page-header__promo">
-        <img class="page-header__promo-pic" src="http://placehold.it/150x100" alt="Добро пожаловать в Седону!" width="280" height="215">
+        <img class="page-header__promo-pic" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону!" width="280" height="215">
       </div>
     </header>
 
@@ -41,21 +45,27 @@
 
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
+      <!-- Позволяет себе заменить "е" на "ё" в соответствии с актуальными рекомендациями экспертов по русскому языку и внести другие исправления, касающиеся только текста -->
       <section class="reasons">
         <header class="reasons__header">
-          <h2 class="visually-hidden">5 причин посетить Седону</h2>
-          <b class="reasons__headline plain-headline">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p class="reasons__subline plain-subline">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="container">
+            <h2 class="visually-hidden">5 причин посетить Седону</h2>
+            <b class="reasons__headline plain-headline">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p class="reasons__subline plain-subline">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
         </header>
         <ul class="reasons__list plain-list">
           <li class="reasons__item reasons__item--detailed plain-list__item true-town">
             <div class="true-town__info">
-              <b class="reasons__name plain-headline">Настоящий городок</b>
-              <p class="reasons__text plain-text">-&nbsp;№1&nbsp;-</p>
-              <p class="reasons__text plain-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="reasons__pic" src="http://placehold.it/150x100" alt="Жильё в Седоне" width="320" height="260">
+              <div class="container">
+                <b class="reasons__name reasons__name--detailed plain-headline">Настоящий городок</b>
+                <p class="reasons__text reasons__text--detailed plain-text">-&nbsp;№1&nbsp;-</p>
+                <p class="reasons__text reasons__text--detailed plain-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
             </div>
+            <img class="reasons__pic" src="http://placehold.it/150x100" alt="Жильё в Седоне" width="100%" height="auto">
             <ul class="true-town__list plain-list">
+              <div class="container">
               <li class="true-town__item true-town__item--housing plain-list__item">
                 <b class="true-town__headline plain-headline">Жильё</b>
                 <p class="true-town__subline plain-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -68,37 +78,46 @@
                 <b class="true-town__headline plain-headline">Еда</b>
                 <p class="true-town__subline plain-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
+            </div>
             </ul>
           </li>
-          <li class="reasons__item reasons__item--detailed plain-list__item">
-            <b class="reasons__name plain-headline">Там есть мост дьявола</b>
-            <p class="reasons__text plain-text">-&nbsp;№2&nbsp;-</p>
-            <p class="reasons__text plain-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="reasons__pic" src="http://placehold.it/150x100" alt="Мост дьявола" width="320" height="260">
+          <li class="reasons__item reasons__item--detailed plain-list__item devils-bridge">
+            <div class="devils-bridge__info">
+              <div class="container">
+                <b class="reasons__name reasons__name--detailed plain-headline">Там есть мост дьявола</b>
+                <p class="reasons__text reasons__text--detailed plain-text">-&nbsp;№2&nbsp;-</p>
+                <p class="reasons__text reasons__text--detailed plain-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+            </div>
+            <img class="reasons__pic" src="http://placehold.it/150x100" alt="Мост дьявола" width="100%" height="auto">
           </li>
-          <li class="reasons__item plain-list__item">
-            <b class="reasons__name plain-headline">Небольшая площадь</b>
-            <p class="reasons__text plain-text">-&nbsp;№3&nbsp;-</p>
-            <p class="reasons__text plain-text">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="reasons__item plain-list__item">
-            <b class="reasons__name plain-headline">Красивая дорога</b>
-            <p class="reasons__text plain-text">-&nbsp;№4&nbsp;-</p>
-            <p class="reasons__text plain-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="reasons__item plain-list__item">
-            <b class="reasons__name plain-headline">Мало туристов</b>
-            <p class="reasons__text plain-text">-&nbsp;№5&nbsp;-</p>
-            <p class="reasons__text plain-text">Большинство едет в Гранд-Каньон и толпится там</p>
-          </li>
+          <div class="container">
+            <li class="reasons__item reasons__item--short plain-list__item">
+              <b class="reasons__name plain-headline">Небольшая площадь</b>
+              <p class="reasons__text plain-text">-&nbsp;№3&nbsp;-</p>
+              <p class="reasons__text plain-text">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="reasons__item reasons__item--short plain-list__item">
+              <b class="reasons__name plain-headline">Красивая дорога</b>
+              <p class="reasons__text plain-text">-&nbsp;№4&nbsp;-</p>
+              <p class="reasons__text plain-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="reasons__item reasons__item--short plain-list__item">
+              <b class="reasons__name plain-headline">Мало туристов</b>
+              <p class="reasons__text plain-text">-&nbsp;№5&nbsp;-</p>
+              <p class="reasons__text plain-text">Большинство едет в Гранд-Каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
 
       <section class="call-to-action">
-        <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
-        <b class="call-to-action__headline plain-headline--large">Заинтересовались?</b>
-        <p class="call-to-action__subline plain-subline">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="call-to-action__find button" href="#">Найти гостиницу</a>
+        <div class="container">
+          <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
+          <b class="call-to-action__headline plain-headline--large">Заинтересовались?</b>
+          <p class="call-to-action__subline plain-subline">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="call-to-action__find button" href="#">Найти гостиницу</a>
+      </div>
       </section>
 
     </main>
@@ -106,23 +125,25 @@
     <footer class="page-footer">
       <h2 class="visually-hidden">Рвануть в Седону</h2>
       <map class="page-footer__map" name="sedona-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352648.682086584!2d-114.0363498140179!3d34.85444381550229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1506088534620" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img src="http://placehold.it/150x100" width="320" height="350">
       </map>
-      <b class="page-footer__headline plain-headline--large">#VISITSEDONA</b>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com" target="_blank">YouTube</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <i class="copyright__text plain-subline">Разработано </i>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><img class="copyright__logo" src="http://placehold.it/150x100" alt="HTML Academy"></a>
+      <div class="container">
+        <b class="page-footer__headline plain-headline--large">#VISITSEDONA</b>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://youtube.com" target="_blank">YouTube</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <i class="copyright__text plain-subline">Разработано </i>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><img class="copyright__logo" src="http://placehold.it/150x100" alt="HTML Academy"></a>
+        </div>
       </div>
     </footer>
 
