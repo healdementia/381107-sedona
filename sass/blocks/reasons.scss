@@ -1,3 +1,57 @@
-.reasons {
+//////////// h e a d e r ////////////
+
+.reasons__header {
+  padding: 40px 0;
+  text-align: center;
+  background-color: $bg;
+}
+
+.reasons__headline {
+  line-height: 26px;
+}
+
+.reasons__subline {
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+//////////// l i s t ////////////
+
+.reasons__list {
+  background-color: $info-bg;
+}
+
+.reasons__item {
+  text-align: center;
+
+  &--detailed {
+    background-color: $theme-color;
+  }
+
+  &--short {
+    padding: 32px 0;
+    border-bottom: 1px solid $reasons-border;
+  }
+}
+
+.reasons__name,
+.reasons__text {
   padding: 0;
+  line-height: 26px;
+
+  &--detailed {
+    color: $light-text-color;
+  }
+}
+
+.reasons__name {
+  padding-bottom: 8px;
+}
+
+.reasons__text {
+  padding-bottom: 14px;
+}
+
+.reasons__pic {
+  margin-bottom: -3px;
 }

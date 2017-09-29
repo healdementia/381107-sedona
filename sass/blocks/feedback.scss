@@ -1,3 +1,11 @@
-.feedback {
-  padding: 0;
+.feedback__header {
+  @include inner-header();
+}
+
+.feedback__headline {
+  @include inner-headline();
+}
+
+.feedback__subline {
+  @include inner-subline();
 }

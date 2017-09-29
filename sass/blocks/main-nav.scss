@@ -1,3 +1,72 @@
-.main-nav {
-  padding: 0;
+.main-nav__top {
+  position: relative;
+}
+
+.main-nav__bottom {
+  position: relative;
+  text-align: center;
+}
+
+.main-nav__logo {
+  margin: 0 auto;
+}
+
+//////////// m a i n - n a v __ l i s t ////////////
+
+.main-nav__list {
+  width: 100%;
+}
+
+.main-nav__item {
+  position: relative;
+
+  @include headline;
+  line-height: 40px;
+  text-align: center;
+  background-color: $button-bg;
+  padding: 10px;
+  border-top: 1px solid $border-top-color;
+  border-bottom: 1px solid $border-bottom-color;
+
+  &:first-child {
+    border-top: none;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  a {
+    color: $light-text-color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $button-down-bg;
+  }
+
+  &:focus a,
+  &:active a {
+    color: rgba($light-text-color, 0.3);
+  }
+}
+
+.main-nav__switch {
+  position: absolute;
+  top: 17px;
+  right: 0;
+  background-repeat: no-repeat;
+
+  &--close {
+    background-image: $close-menu;
+  }
+
+  &--open {
+    background-image: $open-menu;
+  }
 }
