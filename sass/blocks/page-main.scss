@@ -4,11 +4,15 @@
   background-color: $bg;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .page-main {
     @include tablet-container;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .page-main {

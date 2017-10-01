@@ -13,6 +13,8 @@
   @include inner-subline();
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .photo-video__header {
     padding-left: 120px;
@@ -20,6 +22,8 @@
     border: none;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .photo-video__header {

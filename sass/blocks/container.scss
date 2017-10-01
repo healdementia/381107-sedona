@@ -3,12 +3,16 @@
   padding: 0 20px;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .container {
     width: 640px;
     padding: 0 64px;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .container {

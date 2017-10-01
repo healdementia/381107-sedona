@@ -26,6 +26,8 @@
   margin: 0 auto;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .page-header {
     @include tablet-container;
@@ -45,6 +47,8 @@
     padding-top: 100px;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .page-header {

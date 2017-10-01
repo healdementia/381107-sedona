@@ -99,6 +99,8 @@
   display: none;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .form {
     @include tablet-content;
@@ -179,6 +181,8 @@
     display: inline;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .form {

@@ -14,6 +14,8 @@
   height: auto;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .video {
     position: relative;
@@ -34,14 +36,17 @@
     }
   }
 }
- @media (min-width: $desktop-width) {
-   .video {
-     width: 800px;
-     padding-left: ($desktop-width - 800px) / 2;
-     padding-right: ($desktop-width - 800px) / 2;
 
-     &__controls {
-       width: 800px;
-     }
-   }
- }
+//////////// d e s k t o p ////////////
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 800px;
+    padding-left: ($desktop-width - 800px) / 2;
+    padding-right: ($desktop-width - 800px) / 2;
+
+    &__controls {
+      width: 800px;
+    }
+  }
+}

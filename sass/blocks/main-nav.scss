@@ -86,6 +86,8 @@
   width: 23px;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: flex;
@@ -160,6 +162,8 @@
     display: none;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .main-nav__item {

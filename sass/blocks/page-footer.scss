@@ -26,6 +26,8 @@
   width: 320px;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .page-footer {
     @include tablet-container;
@@ -41,6 +43,8 @@
     }
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .page-footer {

@@ -13,6 +13,8 @@
   display: block;
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .gallery {
     @include tablet-content;
@@ -43,6 +45,8 @@
     }
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .gallery {

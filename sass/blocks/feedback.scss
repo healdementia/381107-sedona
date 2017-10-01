@@ -11,6 +11,8 @@
   @include inner-subline();
 }
 
+//////////// t a b l e t ////////////
+
 @media (min-width: $tablet-width) {
   .feedback__header {
     width: auto;
@@ -19,6 +21,8 @@
     border-bottom: none;
   }
 }
+
+//////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
   .feedback__header {
