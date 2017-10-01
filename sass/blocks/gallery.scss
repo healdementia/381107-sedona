@@ -1,5 +1,65 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
 .gallery__item {
   margin: 0;
-  padding: 22px 0;
+  padding: 22px 20px;
   border-bottom: 1px solid $form-border;
+}
+
+.photo__pic {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    @include tablet-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .gallery__item {
+    position: relative;
+    padding: 0;
+    flex-basis: 324px;
+    border: none;
+
+    &:first-child {
+      flex-basis: 648px;
+      height: 480px;
+      overflow: hidden;
+    }
+
+    & .photo__pic {
+      width: 100%;
+      height: auto;
+    }
+
+    &:first-child .photo__pic {
+      position: relative;
+      top: -100px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    @include desktop-container;
+    padding: 0;
+  }
+
+  .gallery__item {
+    flex-basis: 400px;
+
+    &:first-child {
+      flex-basis: $desktop-width;
+      height: 400px;
+    }
+
+    &:first-child .photo__pic {
+      top: -600px;
+    }
+  }
 }

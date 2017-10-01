@@ -1,5 +1,15 @@
 .page-footer {
-  text-align: center;
+  @include mobile-container;
+  background-color: $bg;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 37px;
+    text-align: center;
+  }
 
   &__headline {
     font-size: 21px;
@@ -10,4 +20,41 @@
 .page-footer__map img {
   display: block;
   margin-bottom: 40px;
+}
+
+.page-footer__iframe {
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    @include tablet-container;
+
+    &__wrapper {
+      @include tablet-content;
+      height: 120px;
+      flex-direction: row;
+    }
+
+    &__iframe {
+      width: 768px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    @include desktop-container;
+    padding: 0;
+
+    &__wrapper {
+      @include desktop-container;
+      padding: 0;
+      justify-content: space-around;
+    }
+
+    &__iframe {
+      width: 1200px;
+    }
+  }
 }

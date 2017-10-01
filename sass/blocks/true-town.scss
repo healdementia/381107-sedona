@@ -1,10 +1,13 @@
 .true-town__info {
+  @include mobile-content;
   padding-top: 40px;
   padding-bottom: 10px;
 }
 
 .true-town__list {
-  padding: 25px 0;
+  @include mobile-content;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: $bg;
   text-align: left;
 }
@@ -29,5 +32,57 @@
 
   &--food {
     background-image: $food;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .true-town__info {
+    width: 33%;
+    height: 256px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .true-town__list {
+    display: flex;
+    width: 768px;
+    min-height: 330px;
+    flex-grow: 1;
+    padding: 0;
+  }
+
+  .true-town__item {
+    width: 33%;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 160px;
+    text-align: center;
+    background-size: 75px;
+    background-position: center 60px;
+
+    &--housing {
+      order: 1;
+    }
+
+    &--food {
+      order: 2;
+      background-size: 77px;
+      background-position: center 63px;
+    }
+
+    &--souvenirs {
+      order: 3;
+      background-size: 64px;
+      background-position: center 57px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .true-town__info {
+    padding-top: 55px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 }

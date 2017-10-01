@@ -1,3 +1,17 @@
 .page-main {
+  @include mobile-container;
   padding: 0;
+  background-color: $bg;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    @include tablet-container;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    @include desktop-container;
+  }
 }

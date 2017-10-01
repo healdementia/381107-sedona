@@ -1,6 +1,15 @@
 body {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
   font-family: $regular-font;
   color: $text-color;
   text-transform: uppercase;
-  background-color: $bg;
+  background-color: $body-bg;
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-hidden {
+    display: none;
+  }
 }

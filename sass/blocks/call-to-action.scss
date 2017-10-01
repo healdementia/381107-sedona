@@ -1,4 +1,5 @@
 .call-to-action {
+  @include mobile-content;
   padding-top: 32px;
   padding-bottom: 48px;
   text-align: center;
@@ -16,5 +17,23 @@
   &__find {
     display: block;
     margin-top: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .call-to-action {
+    width: auto;
+    padding: 55px 155px;
+    box-sizing: border-box;
+
+    &__find {
+      max-width: 459px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .call-to-action {
+    padding: 55px 370px 65px 370px;
   }
 }

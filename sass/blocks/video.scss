@@ -2,4 +2,46 @@
   @include inner-header();
   text-align: center;
   border: none;
+
+  &__controls {
+    display: none;
+  }
 }
+
+.video__mock {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    position: relative;
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+
+    &__controls {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 648px;
+      min-height: 93px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+ @media (min-width: $desktop-width) {
+   .video {
+     width: 800px;
+     padding-left: ($desktop-width - 800px) / 2;
+     padding-right: ($desktop-width - 800px) / 2;
+
+     &__controls {
+       width: 800px;
+     }
+   }
+ }
