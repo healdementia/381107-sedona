@@ -23,12 +23,42 @@
   border-bottom: 1px solid $form-border;
 }
 
-@mixin inner-headline {
+@mixin inner-headline() {
   font-size: 18px;
   line-height: 26px;
 }
 
-@mixin inner-subline {
+@mixin inner-subline() {
   font-size: $text-size;
   line-height: 24px;
+}
+
+@mixin mobile-container() {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin mobile-content() {
+  width: 280px;
+  padding: 0 20px;
+}
+
+@mixin tablet-container() {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@mixin tablet-content() {
+  width: 648px;
+  padding: 0 60px;
+}
+
+@mixin desktop-container() {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin desktop-content() {
+  width: 960px;
+  padding: 0 120px;
 }

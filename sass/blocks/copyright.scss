@@ -1,3 +1,21 @@
 .copyright {
+  display: flex;
+  align-items: center;
   margin-bottom: 22px;
+
+  &__text {
+    font-style: normal;
+  }
+}
+
+//////////// t a b l e t ////////////
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    margin: 0;
+
+    &__text {
+      line-height: 26px;
+    }
+  }
 }

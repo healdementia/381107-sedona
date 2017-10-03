@@ -1,4 +1,5 @@
 .feedback__header {
+  @include mobile-content;
   @include inner-header();
 }
 
@@ -8,4 +9,24 @@
 
 .feedback__subline {
   @include inner-subline();
+}
+
+//////////// t a b l e t ////////////
+
+@media (min-width: $tablet-width) {
+  .feedback__header {
+    width: auto;
+    padding-left: 163px;
+    padding-right: 163px;
+    border-bottom: none;
+  }
+}
+
+//////////// d e s k t o p ////////////
+
+@media (min-width: $desktop-width) {
+  .feedback__header {
+    padding-left: 380px;
+    padding-right: 380px;
+  }
 }

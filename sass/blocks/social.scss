@@ -7,3 +7,11 @@
     display: inline-block;
   }
 }
+
+//////////// t a b l e t ////////////
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin: 0;
+  }
+}
