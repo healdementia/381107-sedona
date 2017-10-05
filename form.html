@@ -11,7 +11,7 @@
   <body>
 
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <!-- div class="main-nav__top" -->
         <ul class="main-nav__list plain-list">
           <li class="main-nav__item plain-list__item">
@@ -24,7 +24,7 @@
             <a class="main-nav__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="main-nav__item main-nav__item--active plain-list__item">
-            <a class="main-nav__link" href="#">Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item plain-list__item">
             <a class="main-nav__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
@@ -66,7 +66,7 @@
               <legend class="form__legend">
                 Представьтесь:
               </legend>
-                <!-- Меняет местами поля "Имя" и "Фамилия", поскольку при наличии поля "Отчество" (даже необязательного) это более логичная последовательность - в противном случае получается "Пётр Иванов Александрович", что противоречит правилам русского языка и вредит благозвучию (понимая, что в реальной жизни подобное необходимо согласовывать с коллегами и заказчиком) -->
+                <!-- Поменяла местами поля "Имя" и "Фамилия", поскольку при наличии поля "Отчество" (даже необязательного) это более логичная последовательность - в противном случае получается "Пётр Иванов Александрович", что противоречит правилам русского языка и вредит благозвучию (я осознаю, что в реальной жизни подобное необходимо согласовывать с коллегами и заказчиком) -->
               <div class="form__group form__group--fullname">
                 <label class="form__label form__label--text" for="lastname">Фамилия*:</label>
                 <input class="form__input form__input--text" type="text" id="lastname" name="lastname" value="Иванов" required>
@@ -112,30 +112,32 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--sights">
               <legend class="form__legend">
-                Посещённые достопримечательности:
+                Посещённые<br>достопримечательности:
               </legend>
-              <div class="form__group form__group--sights">
-                <input class="form__input form__input--checkbox" type="checkbox" id="option1" name="option1" checked>
-                <label class="form__label form__label--checkbox" for="option1">Мост Дьявола</label>
-              </div>
-              <div class="form__group form__group--sights">
-                <input class="form__input form__input--checkbox" type="checkbox" id="option2" name="option2" checked>
-                <label class="form__label form__label--checkbox" for="option2">Слайд-парк</label>
-              </div>
-              <div class="form__group form__group--sights">
-                <input class="form__input form__input--checkbox" type="checkbox" id="option3" name="option3">
-                <label class="form__label form__label--checkbox" for="option3">Гора-Колокол</label>
-              </div>
-              <div class="form__group form__group--sights">
-                <input class="form__input form__input--checkbox" type="checkbox" id="option4" name="option4" checked>
-                <label class="form__label form__label--checkbox" for="option4">Красные скалы</label>
+              <div class="form__wrapper">
+                <div class="form__group form__group--sights">
+                  <input class="form__input form__input--checkbox" type="checkbox" id="option1" name="option1" checked>
+                  <label class="form__label form__label--checkbox" for="option1">Мост Дьявола</label>
+                </div>
+                <div class="form__group form__group--sights">
+                  <input class="form__input form__input--checkbox" type="checkbox" id="option2" name="option2" checked>
+                  <label class="form__label form__label--checkbox" for="option2">Слайд-парк</label>
+                </div>
+                <div class="form__group form__group--sights">
+                  <input class="form__input form__input--checkbox" type="checkbox" id="option3" name="option3">
+                  <label class="form__label form__label--checkbox" for="option3">Гора-Колокол</label>
+                </div>
+                <div class="form__group form__group--sights">
+                  <input class="form__input form__input--checkbox" type="checkbox" id="option4" name="option4" checked>
+                  <label class="form__label form__label--checkbox" for="option4">Красные скалы</label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--emotions">
               <legend class="form__legend">
                 Опишите свои эмоции:
               </legend>
-              <textarea class="form__textarea" cols="25" rows="5" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form__textarea" cols="20" rows="3" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
               <div class="form__bottom">
                 <button class="form__submit button" type="submit">Отправить отзыв</button>
                 <p class="form__required plain-text">* &mdash; обязательные поля</p>
@@ -143,18 +145,22 @@
             </fieldset>
           </form>
         </div>
-        <div class="feedback__popup popup popup--error">
-          <b class="popup__headline plain-headline">Что-то пошло не так!</b>
-          <p class="popup__subline plain-subline">Проверьте поля, выделенные красным: скорее всего, вы забыли их заполнить</p>
-          <button class="popup__button button" type="button">ОК</button>
-        </div>
-        <div class="feedback__popup popup popup--success ">
-          <div class="popup__container">
-            <b class="popup__headline plain-headline">Ваш отзыв отправлен!</b>
-            <p class="popup__subline plain-subline">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__wrapper popup__wrapper--closed">
+          <div class="feedback__popup popup popup--error">
+            <b class="popup__headline plain-headline">Что-то пошло не так!</b>
+            <p class="popup__subline plain-subline">Проверьте поля, выделенные красным: скорее всего, вы забыли их заполнить</p>
+            <button class="popup__button button" type="button">ОК</button>
           </div>
-          <div class="popup__close-window">
-            <button class="popup__button button" type="button">Закрыть окно</button>
+        </div>
+        <div class="popup__wrapper popup__wrapper--closed">
+          <div class="feedback__popup popup popup--success">
+            <div class="popup__container">
+              <b class="popup__headline plain-headline">Ваш отзыв отправлен!</b>
+              <p class="popup__subline plain-subline">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            </div>
+            <div class="popup__close-window">
+              <button class="popup__button button" type="button">Закрыть окно</button>
+            </div>
           </div>
         </div>
       </section>

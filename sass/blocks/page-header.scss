@@ -11,6 +11,7 @@
 
 .page-header__intro {
   @include back-bg();
+  background-position: bottom;
   min-height: 158px;
   padding-top: 52px;
   box-sizing: border-box;
@@ -35,6 +36,7 @@
 
   .page-header__promo {
     min-height: 518px;
+    background-size: cover;
   }
 
   .page-header__promo-pic {
@@ -44,7 +46,7 @@
 
   .page-header__intro {
     min-height: 290px;
-    padding-top: 100px;
+    padding-top: 95px;
   }
 }
 
@@ -53,5 +55,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include desktop-container;
+  }
+
+  .page-header__intro {
+    background-size: cover;
+    padding-top: 102px;
   }
 }

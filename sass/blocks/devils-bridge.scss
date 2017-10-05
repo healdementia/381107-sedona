@@ -8,8 +8,9 @@
 
 @media (min-width: $tablet-width) {
   .devils-bridge__info {
-    width: 33%;
+    width: 256px;
     height: 256px;
+    padding-top: 48px;
     padding-left: 40px;
     padding-right: 40px;
     box-sizing: border-box;
@@ -21,6 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .devils-bridge__info {
+    width: 400px;
     padding-top: 55px;
     padding-left: 65px;
     padding-right: 65px;

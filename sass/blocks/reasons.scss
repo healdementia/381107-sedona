@@ -1,7 +1,9 @@
 //////////// b a s i c   &   m o b i l e ////////////
 
 .reasons__header {
-  padding: 40px 0;
+  @include mobile-content;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   background-color: $bg;
 }
@@ -27,7 +29,7 @@
   }
 
   &--short {
-    padding: 32px 0;
+    padding: 32px 0 15px 0;
     border-bottom: 1px solid $reasons-border;
   }
 
@@ -51,7 +53,7 @@
 }
 
 .reasons__text {
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .reasons__pic {
@@ -62,12 +64,29 @@
   @include mobile-content;
 }
 
+//////////// m o b i l e . o n l y ////////////
+
+@media (max-width: 767px) {
+  .reasons__name br {
+    display: none;
+  }
+}
+
 //////////// t a b l e t ////////////
 
 @media (min-width: $tablet-width) {
   .reasons__header {
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-top: 47px;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .reasons__headline {
+    font-size: 21px;
+  }
+
+  .reasons__subline {
+    margin-bottom: 11px;
   }
 
   .reasons__list {
@@ -86,7 +105,7 @@
 
   .reasons__text {
     line-height: 21px;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-bottom: 12px;
     padding-bottom: 0;
   }
@@ -103,7 +122,7 @@
 
   .reasons__item--short {
     width: 256px;
-    padding: 48px;
+    padding: 46px 46px 35px 46px;
     border: none;
   }
 }
