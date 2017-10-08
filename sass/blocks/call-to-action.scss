@@ -25,12 +25,16 @@
 @media (min-width: $tablet-width) {
   .call-to-action {
     width: auto;
-    padding: 55px 155px;
+    padding: 55px 155px 51px 155px;
     box-sizing: border-box;
 
     &__find {
       max-width: 459px;
     }
+  }
+
+  .call-to-action__subline {
+    margin-top: 33px;
   }
 }
 

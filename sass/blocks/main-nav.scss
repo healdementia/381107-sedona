@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .main-nav__item {
     position: relative;
 
@@ -70,6 +70,19 @@
     /* &:not(.main-nav__item--logo) {
         display: none;
     } */
+  }
+
+  .main-nav--opened .main-nav__item,
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__item:not(.main-nav__item--logo) {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__switch {
+    display: none;
   }
 }
 

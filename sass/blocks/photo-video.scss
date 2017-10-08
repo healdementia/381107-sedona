@@ -16,16 +16,38 @@
 //////////// t a b l e t ////////////
 
 @media (min-width: $tablet-width) {
+  .photo-video:last-child {
+    padding-bottom: 10px;
+  }
+
   .photo-video__header {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-top: 70px;
+    padding-left: 168px;
+    padding-right: 168px;
     border: none;
+  }
+
+  .photo-video__headline {
+    font-size: 30px;
+  }
+
+  .photo-video__subline {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .photo-video__wrapper {
+    margin-top: 15px;
   }
 }
 
 //////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
+  .photo-video:last-child {
+    padding-bottom: 59px;
+  }
+
   .photo-video__header {
     padding-left: 380px;
     padding-right: 380px;

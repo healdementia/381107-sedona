@@ -31,6 +31,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     @include tablet-container;
+    padding-top: 10px;
 
     &__wrapper {
       @include tablet-content;
@@ -49,7 +50,7 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     @include desktop-container;
-    padding: 0;
+    padding: 10px 0 0 0;
 
     &__wrapper {
       @include desktop-container;

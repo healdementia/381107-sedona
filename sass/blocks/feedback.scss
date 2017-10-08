@@ -1,6 +1,8 @@
 .feedback__header {
-  @include mobile-content;
+  @include mobile-content();
   @include inner-header();
+  padding-top: 36px;
+  padding-bottom: 20px;
 }
 
 .feedback__headline {
@@ -9,23 +11,44 @@
 
 .feedback__subline {
   @include inner-subline();
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 //////////// t a b l e t ////////////
 
 @media (min-width: $tablet-width) {
+  .feedback__form {
+    margin-top: 39px;
+  }
+
   .feedback__header {
     width: auto;
-    padding-left: 163px;
-    padding-right: 163px;
+    padding-top: 70px;
+    padding-left: 164px;
+    padding-right: 164px;
     border-bottom: none;
+  }
+
+  .feedback__headline {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .feedback__subline {
+    margin-top: 35px;
   }
 }
 
 //////////// d e s k t o p ////////////
 
 @media (min-width: $desktop-width) {
+  .feedback__form {
+    margin-top: 24px;
+  }
+
   .feedback__header {
+    padding-top: 106px;
     padding-left: 380px;
     padding-right: 380px;
   }
