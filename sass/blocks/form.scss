@@ -150,6 +150,43 @@
   display: none;
 }
 
+.form__input--radio {
+  display: none;
+}
+
+.form__label--radio {
+  display: flex;
+  align-items: center;
+  padding-left: 79px;
+}
+
+.form__label--radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: $input-bg;
+  border: 17px solid $input-bg;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $input-hover-bg;
+    border-color: $input-hover-bg;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $input-down-bg;
+    border-color: $input-down-bg;
+  }
+}
+
+.form__input--radio:checked ~ .form__label--radio::before {
+  background-color: $text-color;
+}
+
 .form__input--checkbox {
   display: none;
 }
