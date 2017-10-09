@@ -69,15 +69,12 @@
 }
 
 .form__icon-group {
+  display: flex;
   width: 280px;
 }
 
 .form__input--text[type="tel"],
 .form__input--text[type="mail"] {
-  display: flex;
-}
-
-.form__icon-group {
   display: flex;
 }
 

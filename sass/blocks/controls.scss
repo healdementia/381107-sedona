@@ -44,6 +44,8 @@
 .controls__item--captions {
   background-image: url("../img/icon-video-subtitles.svg");
   background-size: 32px;
+  flex-grow: 1;
+  background-position: right;
 }
 
 .controls__item--fullscreen {
@@ -59,11 +61,6 @@
   background-color: $body-bg;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.controls__item--captions {
-  flex-grow: 1;
-  background-position: right;
 }
 
 //////////// t a b l e t ////////////
