@@ -46,7 +46,9 @@ $housing: url("../img/icon-house.svg");
 $souvenirs: url("../img/icon-gift.svg");
 $food: url("../img/icon-burger.svg");
 
-$like: url("../img/icon-like.svg");
+$like-mobile: url("../img/icon-like-mobile.svg");
+$like-tablet: url("../img/icon-like-tablet.svg");
+$like-desktop: url("../img/icon-like-desktop.svg");
 
 //////////// f o n t s ////////////
 
@@ -61,3 +63,8 @@ $text-size: 14px;
 $mobile-width-max: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+
+//////////// r e t i n a ////////////
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -43,7 +43,7 @@
 .form__label--radio,
 .form__label--checkbox {
   font-family: $bold-font;
-  padding: 18px 20px;
+  padding: 16px 20px;
   font-size: 18px;
   line-height: 26px;
   color: $accent-color;
@@ -68,13 +68,12 @@
   }
 }
 
-/* .form__input--text[type="tel"],
-.form__input--text[type="email"] */
 .form__icon-group {
   width: 280px;
 }
 
-.form__input--text[type="tel"] {
+.form__input--text[type="tel"],
+.form__input--text[type="mail"] {
   display: flex;
 }
 
@@ -113,6 +112,7 @@
 
 .form__group--impression {
   justify-content: flex-start;
+  margin-bottom: 13px;
 }
 
 .form__group--contact {
@@ -133,6 +133,7 @@
 
 .form__textarea {
   width: 280px;
+  max-width: 280px;
   min-height: 160px;
   box-sizing: border-box;
 }
@@ -157,34 +158,38 @@
 .form__label--radio {
   display: flex;
   align-items: center;
-  padding-left: 79px;
+  padding: 0;
 }
 
 .form__label--radio::before {
   content: "";
-  position: absolute;
-  left: 0;
   width: 22px;
   height: 22px;
+  margin-right: 24px;
   background-color: $input-bg;
   border: 17px solid $input-bg;
   border-radius: 50%;
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: $input-hover-bg;
-    border-color: $input-hover-bg;
-  }
+.form__label--radio:hover::before {
+  background-color: $input-hover-bg;
+  border-color: $input-hover-bg;
+}
 
-  &:focus,
-  &:active {
-    background-color: $input-down-bg;
-    border-color: $input-down-bg;
-  }
+.form__label--radio:focus::before,
+.form__label--radio:active::before {
+  background-color: $input-down-bg;
+  border-color: $input-down-bg;
 }
 
 .form__input--radio:checked ~ .form__label--radio::before {
   background-color: $text-color;
+}
+
+.form__input--radio:checked ~ .form__label--radio:focus::before,
+.form__input--radio:checked ~ .form__label--radio:active::before {
+  background-color: rgba($text-color, 0.3);
 }
 
 .form__input--checkbox {
@@ -206,12 +211,12 @@
   border-radius: 5px;
 }
 
-.form__label--checkbox:hover .form__label--checkbox::before {
+.form__label--checkbox:hover::before {
   background-color: $input-hover-bg;
 }
 
-.form__label--checkbox:focus .form__label--checkbox::before,
-.form__label--checkbox:active .form__label--checkbox::before {
+.form__label--checkbox:focus::before,
+.form__label--checkbox:active::before {
   background-color: $input-down-bg;
 }
 
@@ -220,11 +225,11 @@
   background-image: url("../img/icon-tick.svg");
   background-size: 25px;
   background-repeat: no-repeat;
+}
 
-  &:focus,
-  &:active {
-    background-image: url("img/icon-tick-down.svg");
-  }
+.form__input--checkbox:checked ~ .form__label--checkbox:focus::before,
+.form__input--checkbox:checked ~ .form__label--checkbox:active::before {
+  background-image: url("../img/icon-tick-down.svg");
 }
 
 //////////// t a b l e t ////////////
@@ -333,6 +338,10 @@
     }
   }
 
+  .form__group--impression {
+    margin-bottom: 22px;
+  }
+
   .form__group--sights {
     flex-basis: 255px;
     padding-left: 28px;
@@ -349,6 +358,7 @@
 
   .form__textarea {
     width: 648px;
+    max-width: 648px;
   }
 
   .form__bottom {
@@ -439,14 +449,13 @@
     padding-left: 0;
   }
 
-  /* .form__input--text[type="tel"],
-  .form__input--text[type="email"] */
   .form__icon-group {
     width: 316px;
   }
 
   .form__textarea {
     width: 960px;
+    max-width: 960px;
   }
 
   .form__submit {

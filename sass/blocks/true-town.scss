@@ -35,6 +35,17 @@
   }
 }
 
+//////////// m o b i l e . o n l y ////////////
+
+@media (max-width: 767px) {
+  .true-town__info {
+    padding-top: 80px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+
 //////////// t a b l e t ////////////
 
 @media (min-width: $tablet-width) {

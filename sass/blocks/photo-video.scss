@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.photo-video__header--video {
+  border-bottom: none;
+}
+
 .photo-video__headline {
   @include inner-headline();
 }

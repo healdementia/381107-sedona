@@ -67,6 +67,10 @@
 //////////// m o b i l e . o n l y ////////////
 
 @media (max-width: 767px) {
+  .reasons__header {
+    padding-bottom: 0;
+  }
+
   .reasons__name br {
     display: none;
   }
@@ -76,6 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .reasons__header {
+    width: auto;
     padding-top: 47px;
     padding-left: 140px;
     padding-right: 140px;
@@ -142,5 +147,10 @@
     & .reasons__name {
       max-width: 100px;
     }
+  }
+
+  .reasons__item--detailed picture {
+    max-height: 256px;
+    overflow: hidden;
   }
 }
