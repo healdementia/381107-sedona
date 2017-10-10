@@ -27,7 +27,7 @@
     padding-left: 32px;
     color: $accent-color;
     font-family: $bold-font;
-    background-image: $like;
+    background-image: $like-mobile;
     background-repeat: no-repeat;
     background-size: 22px;
     background-position: left;
@@ -41,8 +41,6 @@
   .photo__info {
     display: flex;
     align-items: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     min-height: 80px;
     padding: 0 20px;
@@ -56,6 +54,7 @@
 
   .photo__like-counter {
     width: 65px;
+    background-image: $like-tablet;
   }
 }
 
@@ -69,6 +68,8 @@
 
 @media (min-width: $desktop-width) {
   .photo__info {
+    position: absolute;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
@@ -76,5 +77,9 @@
   .photo__author,
   .photo__like-counter {
     color: $light-text-color;
+  }
+
+  .photo__like-counter {
+    background-image: $like-desktop;
   }
 }

@@ -31,7 +31,11 @@
           </li>
           <li class="main-nav__item main-nav__item--logo plain-list__item">
             <a class="main-nav__logo" href="index.html">
-              <img class="main-nav__logo-pic" src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="103" height="85">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-nav__logo-pic" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
+              </picture>
             </a>
             <button class="main-nav__switch main-nav__switch--open" type="button">
               <img class="main-nav__button" src="img/icon-menu.svg" alt="Открыть меню" width="24" height="21">
@@ -86,11 +90,15 @@
               </legend>
               <div class="form__group form__group--contact">
                 <label class="form__label form__label--text" for="tel"><span class="desktop-hidden">Контактный </span>телефон*:</label>
-                <input class="form__input form__input--text" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+                <div class="form__icon-group form__icon-group--tel">
+                  <input class="form__input form__input--text" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+                </div>
               </div>
               <div class="form__group form__group--contact">
                 <label class="form__label form__label--text" for="email">Электронная почта*:</label>
-                <input class="form__input form__input--text" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                <div class="form__icon-group form__icon-group--mail">
+                  <input class="form__input form__input--text" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--impression">
@@ -173,13 +181,13 @@
         <b class="page-footer__headline plain-headline--large">#VISITSEDONA</b>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com" title="Twitter" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+            <a class="social__link social__link--facebook" href="https://facebook.com" title="Facebook" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://youtube.com" target="_blank">YouTube</a>
+            <a class="social__link social__link--youtube" href="https://youtube.com" title="YouTube" target="_blank"></a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">

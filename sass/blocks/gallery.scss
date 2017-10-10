@@ -38,11 +38,6 @@
       width: 100%;
       height: auto;
     }
-
-    &:first-child .photo__pic {
-      position: relative;
-      top: -100px;
-    }
   }
 }
 
@@ -60,10 +55,6 @@
     &:first-child {
       flex-basis: $desktop-width;
       height: 400px;
-    }
-
-    &:first-child .photo__pic {
-      top: -600px;
     }
   }
 }

@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   margin-bottom: 22px;
+}
 
-  &__text {
-    font-style: normal;
-  }
+.copyright__text {
+  font-style: normal;
+}
+
+.copyright__logo {
+  padding-left: 12px;
 }
 
 //////////// t a b l e t ////////////
