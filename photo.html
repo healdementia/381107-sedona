@@ -10,14 +10,18 @@
 
   <body>
 
+    <div class="page-wrapper">
+
     <header class="page-header">
       <nav class="main-nav">
-        <!-- div class="main-nav__top" -->
         <ul class="main-nav__list plain-list">
           <li class="main-nav__item plain-list__item">
             <a class="main-nav__link" href="index.html">Главная</a>
             <button class="main-nav__switch main-nav__switch--close" type="button">
-              <img class="main-nav__button" src="img/icon-cross.svg" alt="Закрыть меню" width="23" height="22">
+              <svg class="main-nav__button main-nav__button--close" width="23" height="22" aria-labelledby="title">
+                <title>Закрыть меню</title>
+                <use xlink:href="img/sprite.svg#icon-close-menu"></use>
+              </svg>
             </button>
           </li>
           <li class="main-nav__item main-nav__item--active plain-list__item">
@@ -32,23 +36,19 @@
           <li class="main-nav__item main-nav__item--logo plain-list__item">
             <a class="main-nav__logo" href="index.html">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" width="188" height="96">
                 <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
                 <img class="main-nav__logo-pic" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
               </picture>
             </a>
             <button class="main-nav__switch main-nav__switch--open" type="button">
-              <img class="main-nav__button" src="img/icon-menu.svg" alt="Открыть меню" width="24" height="21">
+              <svg class="main-nav__button main-nav__button--open" width="24" height="21" aria-labelledby="title">
+                <title>Открыть меню</title>
+                <use xlink:href="img/sprite.svg#icon-open-menu"></use>
+              </svg>
             </button>
           </li>
         </ul>
-        <!-- /div -->
-        <!-- div class="main-nav__bottom">
-          <a class="main-nav__logo" href="index.html">
-            <img class="main-nav__logo-pic" src="http://placehold.it/150x100" alt="City of Sedona" width="103" height="85">
-          </a>
-          <button class="main-nav__switch main-nav__switch--open" type="button">Открыть меню</button>
-        </div -->
       </nav>
       <div class="page-header__intro">
         <img class="page-header__intro-pic" src="img/text-sedona.svg" alt="Пейзаж Седоны" width="228" height="40">
@@ -76,7 +76,7 @@
                 <p class="photo__caption">Неродные просторы</p>
                 <p class="photo__author">Автор фото: Борис</p>
               </div>
-              <p class="photo__like-counter">1350</p>
+              <p class="photo__like-counter" title="Это фото понравилось такому количеству людей">1350</p>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -90,7 +90,7 @@
                 <p class="photo__caption">Местная растительность</p>
                 <p class="photo__author">Автор фото: Сергей</p>
               </div>
-              <p class="photo__like-counter">143</p>
+              <p class="photo__like-counter" title="Это фото понравилось такому количеству людей">143</p>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -104,7 +104,7 @@
                 <p class="photo__caption">Дорога на север</p>
                 <p class="photo__author">Автор фото: Пётр</p>
               </div>
-              <p class="photo__like-counter">96</p>
+              <p class="photo__like-counter" title="Это фото понравилось такому количеству людей">96</p>
             </figcaption>
           </figure>
           <figure class="gallery__item photo">
@@ -118,7 +118,7 @@
                 <p class="photo__caption">Мост Дьявола</p>
                 <p class="photo__author">Автор фото: Антон</p>
               </div>
-              <p class="photo__like-counter">254</p>
+              <p class="photo__like-counter" title="Это фото понравилось такому количеству людей">254</p>
             </figcaption>
           </figure>
         </div>
@@ -144,10 +144,24 @@
               <li class="controls__item controls__item--progress">
                 <span></span>
               </li>
-              <li class="controls__item controls__item--replay"></li>
-              <li class="controls__item controls__item--captions"></li>
-              <li class="controls__item controls__item--fullscreen"></li>
-              <!-- img src="img/icon-video-replay.svg" alt="Воспроизвести заново" width="16" height="20" -->
+              <li class="controls__item controls__item--replay">
+                <svg class="controls__button controls__button--replay" width="16" height="20" aria-labelledby="title">
+                  <title>Повторить</title>
+                  <use xlink:href="img/sprite.svg#icon-replay"></use>
+                </svg>
+              </li>
+              <li class="controls__item controls__item--captions">
+                <svg class="controls__button controls__button--captions" width="32" height="20" aria-labelledby="title">
+                  <title>Субтитры</title>
+                  <use xlink:href="img/sprite.svg#icon-captions"></use>
+                </svg>
+              </li>
+              <li class="controls__item controls__item--fullscreen">
+                <svg class="controls__button controls__button--fullscreen" width="32" height="20" aria-labelledby="title">
+                  <title>Во весь экран</title>
+                  <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                </svg>
+              </li>
             </ul>
           </div>
         </div>
@@ -161,23 +175,43 @@
         <b class="page-footer__headline plain-headline--large">#VISITSEDONA</b>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com" title="Twitter" target="_blank"></a>
+            <a class="social__link social__link--twitter" href="https://twitter.com" title="Twitter" target="_blank">
+              <svg class="social__icon" width="18" height="14" aria-labelledby="title">
+                <title>Twitter</title>
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com" title="Facebook" target="_blank"></a>
+            <a class="social__link social__link--facebook" href="https://facebook.com" title="Facebook" target="_blank">
+              <svg class="social__icon" width="9" height="18" aria-labelledby="title">
+                <title>Facebook</title>
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://youtube.com" title="YouTube" target="_blank"></a>
+            <a class="social__link social__link--youtube" href="https://youtube.com" title="YouTube" target="_blank">
+              <svg class="social__icon" width="20" height="14" aria-labelledby="title">
+                <title>YouTube</title>
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
           <i class="copyright__text plain-subline">Разработано </i>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <img class="copyright__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34" aria-labelledby="title">
+              <title>Продвинутый интенсив HTML Academy</title>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
+
+    </div>
 
   </body>
 

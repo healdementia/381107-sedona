@@ -1,7 +1,7 @@
 .feedback__header {
   @include mobile-content();
   @include inner-header();
-  padding-top: 36px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 

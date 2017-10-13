@@ -1,7 +1,7 @@
 .devils-bridge__info {
   @include mobile-content;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 //////////// t a b l e t ////////////
@@ -9,10 +9,10 @@
 @media (min-width: $tablet-width) {
   .devils-bridge__info {
     width: 256px;
-    height: 256px;
+    min-height: 256px;
     padding-top: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 43px;
+    padding-right: 43px;
     box-sizing: border-box;
     order: 2;
   }
