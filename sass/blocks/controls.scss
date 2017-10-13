@@ -52,6 +52,7 @@
 
 .controls__item--captions {
   flex-grow: 1;
+  justify-content: flex-end;
   /* background-image: url("../img/icon-video-subtitles.svg");
   background-size: 32px;
   background-position: right; */
@@ -71,10 +72,6 @@
   background-color: $body-bg;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.controls__item--captions {
-  justify-content: flex-end;
 }
 
 .controls__button {
