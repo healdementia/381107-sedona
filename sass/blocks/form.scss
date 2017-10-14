@@ -189,6 +189,22 @@
   background-color: rgba($text-color, 0.3);
 }
 
+.form__input--radio:disabled ~ .form__label--radio {
+  opacity: 0.3;
+}
+
+.form__input--radio:disabled ~ .form__label--radio::before {
+  background-color: $input-bg;
+  border-color: $input-bg;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $input-bg;
+    border-color: $input-bg;
+  }
+}
+
 .form__input--checkbox {
   display: none;
 }
@@ -227,6 +243,15 @@
 .form__input--checkbox:checked ~ .form__label--checkbox:focus::before,
 .form__input--checkbox:checked ~ .form__label--checkbox:active::before {
   background-image: url("../img/icon-tick-down.svg");
+}
+
+.form__input--checkbox:disabled ~ .form__label--checkbox {
+  opacity: 0.3;
+}
+
+.form__input--checkbox:disabled ~ .form__label--checkbox::before {
+  background-color: $input-bg;
+  background-image: none;
 }
 
 //////////// t a b l e t ////////////
@@ -346,6 +371,22 @@
 
     &:last-child {
       margin-bottom: 20px;
+    }
+
+    &:nth-child(1) {
+      order: 0;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+    }
+
+    &:nth-child(4) {
+      order: 3;
     }
   }
 

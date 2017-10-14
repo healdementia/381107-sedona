@@ -17,6 +17,8 @@
   &__find {
     display: block;
     margin-top: 40px;
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -31,6 +33,10 @@
     &__find {
       max-width: 459px;
     }
+  }
+
+  .call-to-action__headline {
+    font-size: 30px;
   }
 
   .call-to-action__subline {

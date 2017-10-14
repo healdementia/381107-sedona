@@ -65,11 +65,6 @@
       background-color: $bg;
       border: none;
     }
-
-    /* to hide the mobile menu delete the comment tag */
-    /* &:not(.main-nav__item--logo) {
-        display: none;
-    } */
   }
 
   .main-nav--opened .main-nav__item,
@@ -97,6 +92,14 @@
 
 .main-nav__button {
   width: 23px;
+}
+
+.main-nav__button--close {
+  fill: #ffffff;
+}
+
+.main-nav__button--open {
+  fill: $theme-color;
 }
 
 //////////// t a b l e t ////////////

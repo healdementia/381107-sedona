@@ -17,9 +17,23 @@
   }
 }
 
-.page-footer__map img {
+.page-footer__map {
+  position: relative;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-map-marker.svg");
+  }
 }
 
 .page-footer__iframe {
@@ -42,6 +56,10 @@
     &__iframe {
       width: 768px;
     }
+  }
+
+  .page-footer__map {
+    margin-bottom: 0;
   }
 }
 

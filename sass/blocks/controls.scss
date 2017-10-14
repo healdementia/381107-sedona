@@ -36,31 +36,65 @@
   background-color: #ffffff;
 }
 
-.controls__item--replay {
+.controls__item--progress span:hover::after {
+  background-color: #dbdbdb;
+}
+
+.controls__item--progress span:focus::after,
+.controls__item--progress span:active::after {
+  background-color: #c1c1c1;
+}
+
+/* .controls__item--replay {
   background-image: url("../img/icon-video-replay.svg");
   background-size: 16px;
-}
+} */
 
 .controls__item--captions {
-  background-image: url("../img/icon-video-subtitles.svg");
-  background-size: 32px;
   flex-grow: 1;
-  background-position: right;
+  justify-content: flex-end;
+  /* background-image: url("../img/icon-video-subtitles.svg");
+  background-size: 32px;
+  background-position: right; */
 }
 
-.controls__item--fullscreen {
+/* .controls__item--fullscreen {
   background-image: url("../img/icon-video-fullscreen.svg");
   background-size: 20px;
-}
+} */
 
 .controls__item--replay,
 .controls__item--captions,
 .controls__item--fullscreen {
+  display: flex;
   height: 66px;
   min-width: 66px;
   background-color: $body-bg;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.controls__button {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:focus,
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.controls__button--replay,
+.controls__button--fullscreen {
+  margin: auto;
+}
+
+.controls__button--captions {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 //////////// t a b l e t ////////////
@@ -81,7 +115,7 @@
 
   .controls__item--replay {
     order: -1;
-    background-image: url("../img/icon-video-replay-tablet.svg");
+    /* background-image: url("../img/icon-video-replay-tablet.svg"); */
   }
 
   .controls__item--progress {
@@ -96,12 +130,25 @@
     margin-left: 113px;
   }
 
-  .controls__item--captions {
+  /* .controls__item--captions {
     background-image: url("../img/icon-video-subtitles-tablet.svg");
   }
 
   .controls__item--fullscreen {
     background-image: url("../img/icon-video-fullscreen-tablet.svg");
+  } */
+
+  .controls__button {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #dbdbdb;
+    }
+
+    &:focus,
+    &:active {
+      fill: #c1c1c1;
+    }
   }
 }
 

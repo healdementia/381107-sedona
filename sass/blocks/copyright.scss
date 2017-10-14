@@ -10,6 +10,16 @@
 
 .copyright__logo {
   padding-left: 12px;
+  fill: #000000;
+
+  &:hover {
+    fill: $theme-color;
+  }
+
+  &:focus,
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 //////////// t a b l e t ////////////

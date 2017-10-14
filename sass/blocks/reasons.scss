@@ -1,7 +1,9 @@
 //////////// b a s i c   &   m o b i l e ////////////
 
 .reasons__header {
-  @include mobile-content;
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
@@ -61,7 +63,9 @@
 }
 
 .reasons__short {
-  @include mobile-content;
+  width: 250px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 //////////// m o b i l e . o n l y ////////////
@@ -102,6 +106,7 @@
   .reasons__item--detailed {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .reasons__name {
