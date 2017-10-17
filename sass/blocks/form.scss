@@ -12,6 +12,16 @@
   }
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $accent-color;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: $accent-color;
+}
+
 .form__fieldset--contact .form__label {
   padding-left: 22px;
   margin-bottom: 9px;
@@ -63,9 +73,16 @@
   &:focus,
   &:active {
     background-color: $bg;
-    outline: 4px solid $input-hover-bg;
-    outline-offset: -4px;
+    /* outline: 4px solid $input-hover-bg;
+    outline-offset: -4px; */
+    outline: none;
+    box-shadow: 0 0 0 4px $input-hover-bg inset;
   }
+}
+
+.form__input--text:focus,
+.form__input--text:active {
+  margin-right: -4px;
 }
 
 .form__icon-group {
@@ -274,16 +291,17 @@
   .form__fieldset--impression {
     position: relative;
     order: -1;
-    flex-basis: 324px;
-    padding-right: 50px;
+    flex-basis: auto;
+    width: 324px;
+    padding-right: 46px;
 
     &::after {
       content: "";
       position: absolute;
-      top: -60px;
+      bottom: 25px;
       right: 0;
       width: 1px;
-      height: 308px;
+      height: 292px;
       background-color: #dbdbdb;
     }
   }
@@ -310,15 +328,21 @@
   .form__fieldset--sights .form__wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 648px;
     margin-top: 0;
     padding-left: 69px;
     padding-right: 69px;
+    box-sizing: border-box;
   }
 
   .form__fieldset--contact,
-  .form__fieldset--sights,
   .form__fieldset--emotions {
     flex-basis: 648px;
+  }
+
+  .fomm__fieldset--sights {
+    flex-basis: auto;
+    width: 648px;
   }
 
   .form__legend {
@@ -365,12 +389,13 @@
   }
 
   .form__group--sights {
-    flex-basis: 255px;
+    flex-basis: auto;
+    width: 255px;
     padding-left: 28px;
     margin-bottom: 32px;
 
     &:last-child {
-      margin-bottom: 20px;
+      margin-bottom: 32px;
     }
 
     &:nth-child(1) {
@@ -427,7 +452,8 @@
   }
 
   .form__fieldset--impression {
-    flex-basis: 480px;
+    flex-basis: auto;
+    width: 480px;
     padding-right: 125px;
   }
 
@@ -449,6 +475,7 @@
 
   .form__fieldset--sights .form__wrapper {
     justify-content: space-between;
+    width: auto;
     padding-left: 0;
     padding-right: 0;
   }
@@ -470,7 +497,8 @@
 
   .form__group--contact {
     flex-direction: row;
-    flex-basis: 480px;
+    flex-basis: auto;
+    width: 480px;
     align-items: center;
 
     &:first-of-type {
@@ -484,6 +512,7 @@
 
   .form__group--sights {
     flex-basis: auto;
+    width: auto;
     padding-left: 0;
   }
 

@@ -20,7 +20,17 @@
 .page-footer__map {
   position: relative;
   display: block;
+  height: 350px;
   margin-bottom: 5px;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -33,11 +43,14 @@
     width: 27px;
     height: 27px;
     background-image: url("../img/icon-map-marker.svg");
+    z-index: 1;
   }
 }
 
 .page-footer__iframe {
+  position: relative;
   width: 320px;
+  z-index: 2;
 }
 
 //////////// t a b l e t ////////////
@@ -60,6 +73,11 @@
 
   .page-footer__map {
     margin-bottom: 0;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -78,6 +96,14 @@
 
     &__iframe {
       width: 1200px;
+    }
+  }
+
+  .page-footer__map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
 }
