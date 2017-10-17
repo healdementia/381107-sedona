@@ -19,6 +19,10 @@
   width: 100%;
 }
 
+.main-nav__item--logo {
+  display: block;
+}
+
 @media (max-width: $mobile-width-max) {
   .main-nav__item {
     position: relative;
@@ -133,6 +137,7 @@
     &:nth-child(5) {
       order: 2;
       flex-grow: 1;
+      display: block;
     }
 
     &:nth-child(3) {
