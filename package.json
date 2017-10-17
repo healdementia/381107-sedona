@@ -17,6 +17,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
     "gulp-webp": "^2.3.0",
     "i": "^0.3.6",
     "npm": "^5.5.1",
@@ -29,8 +30,8 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "browserslist": [
     "last 2 versions",
