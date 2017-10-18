@@ -33,11 +33,11 @@
       height: 480px;
       overflow: hidden;
     }
+  }
 
-    & .photo__pic {
-      width: 100%;
-      height: auto;
-    }
+  .gallery__item .photo__pic {
+    width: 100%;
+    height: auto;
   }
 }
 

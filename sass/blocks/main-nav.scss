@@ -23,6 +23,27 @@
   display: block;
 }
 
+.main-nav__switch {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.main-nav__button {
+  width: 23px;
+}
+
+.main-nav__button--close {
+  fill: #ffffff;
+}
+
+.main-nav__button--open {
+  fill: $theme-color;
+}
+
 @media (max-width: $mobile-width-max) {
   .main-nav__item {
     position: relative;
@@ -43,11 +64,6 @@
       border-bottom: none;
     }
 
-    a {
-      color: $light-text-color;
-      text-decoration: none;
-    }
-
     &:hover {
       background-color: $button-hover-bg;
     }
@@ -57,11 +73,6 @@
       background-color: $button-down-bg;
     }
 
-    &:focus a,
-    &:active a {
-      color: rgba($light-text-color, 0.3);
-    }
-
     &:last-child {
       position: relative;
       height: 56px;
@@ -69,6 +80,16 @@
       background-color: $bg;
       border: none;
     }
+  }
+
+  .main-nav__item a {
+    color: $light-text-color;
+    text-decoration: none;
+  }
+
+  .main-nav__item:focus a,
+  .main-nav__item:active a {
+    color: rgba($light-text-color, 0.3);
   }
 
   .main-nav--opened .main-nav__item,
@@ -83,27 +104,6 @@
   .main-nav--nojs .main-nav__switch {
     display: none;
   }
-}
-
-.main-nav__switch {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  padding: 0;
-  background: none;
-  border: none;
-}
-
-.main-nav__button {
-  width: 23px;
-}
-
-.main-nav__button--close {
-  fill: #ffffff;
-}
-
-.main-nav__button--open {
-  fill: $theme-color;
 }
 
 //////////// t a b l e t ////////////
@@ -164,19 +164,19 @@
     &:active {
       color: rgba($accent-color, 0.3);
     }
+  }
 
-    .main-nav__item--active & {
-      color: $main-menu-active-color;
-    }
+  .main-nav__item--active .main-nav__link {
+    color: $main-menu-active-color;
+  }
 
-    .main-nav__item--active &:hover {
-      color: $main-menu-active-hover-color;
-    }
+  .main-nav__item--active .main-nav__link:hover {
+    color: $main-menu-active-hover-color;
+  }
 
-    .main-nav__item--active &:focus,
-    .main-nav__item--active &:active {
-      color: rgba($main-menu-active-color, 0.3);
-    }
+  .main-nav__item--active .main-nav__link:focus,
+  .main-nav__item--active .main-nav__link:active {
+    color: rgba($main-menu-active-color, 0.3);
   }
 
   .main-nav__switch {

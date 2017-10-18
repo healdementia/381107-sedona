@@ -148,10 +148,10 @@
   .reasons__item--short {
     width: 400px;
     padding: 48px 57px;
+  }
 
-    & .reasons__name {
-      max-width: 100px;
-    }
+  .reasons__item--short .reasons__name {
+    max-width: 100px;
   }
 
   .reasons__item--detailed picture {

@@ -3,23 +3,23 @@
   padding-top: 32px;
   padding-bottom: 48px;
   text-align: center;
+}
 
-  &__headline {
-    font-size: 21px;
-    line-height: 26px;
-  }
+.call-to-action__headline {
+  font-size: 21px;
+  line-height: 26px;
+}
 
-  &__subline {
-    font-size: 14px;
-    line-height: 24px;
-  }
+.call-to-action__subline {
+  font-size: 14px;
+  line-height: 24px;
+}
 
-  &__find {
-    display: block;
-    margin-top: 40px;
-    font-size: 21px;
-    line-height: 26px;
-  }
+.call-to-action__find {
+  display: block;
+  margin-top: 40px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 //////////// t a b l e t ////////////
@@ -29,10 +29,10 @@
     width: auto;
     padding: 55px 155px 51px 155px;
     box-sizing: border-box;
+  }
 
-    &__find {
-      max-width: 459px;
-    }
+  .call-to-action__find {
+    max-width: 459px;
   }
 
   .call-to-action__headline {
