@@ -11,6 +11,7 @@ var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
@@ -53,6 +54,7 @@ gulp.task("html", function() {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
