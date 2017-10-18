@@ -23,8 +23,8 @@
   background-color: #81b3d2;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain, cover;
+  background-position: bottom, bottom;
+  background-size: contain, 250%;
   box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -69,6 +69,7 @@
     min-height: 290px;
     padding-top: 95px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: contain, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");

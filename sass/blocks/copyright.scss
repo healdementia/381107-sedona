@@ -27,9 +27,9 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+  }
 
-    &__text {
-      line-height: 26px;
-    }
+  .copyright__text {
+    line-height: 26px;
   }
 }
