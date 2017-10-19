@@ -29,8 +29,8 @@
             <li class="main-nav__item plain-list__item">
               <a class="main-nav__link" href="index.html">Главная</a>
               <button class="main-nav__switch main-nav__switch--close" type="button">
-                <svg class="main-nav__button main-nav__button--close" width="23" height="22" aria-labelledby="title">
-                  <title>Закрыть меню</title>
+                <svg class="main-nav__button main-nav__button--close" width="23" height="22" aria-labelledby="title__close-menu">
+                  <title id="title__close-menu">Закрыть меню</title>
                   <use xlink:href="#build-icon-close-menu"></use>
                 </svg>
               </button>
@@ -47,14 +47,14 @@
             <li class="main-nav__item main-nav__item--logo plain-list__item">
               <a class="main-nav__logo" href="index.html">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" width="188" height="96">
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                   <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
                   <img class="main-nav__logo-pic" src="img/logo-sedona-mobile.svg" alt="City of Sedona">
                 </picture>
               </a>
               <button class="main-nav__switch main-nav__switch--open" type="button">
-                <svg class="main-nav__button main-nav__button--open" width="24" height="21" aria-labelledby="title">
-                  <title>Открыть меню</title>
+                <svg class="main-nav__button main-nav__button--open" width="24" height="21" aria-labelledby="title__open-menu">
+                  <title id="title__open-menu">Открыть меню</title>
                   <use xlink:href="#build-icon-open-menu"></use>
                 </svg>
               </button>
@@ -68,9 +68,10 @@
 
       <main class="page-main">
 
-        <h1 class="visually-hidden">Фотографии Седоны</h1>
+        <h1 class="visually-hidden">Фотографии и видео, снятые в Седоне</h1>
 
         <section class="photo-video">
+          <h2 class="visually-hidden">Фото Седоны</h2>
           <header class="photo-video__header">
             <b class="photo-video__headline plain-headline">Фото и видео</b>
             <p class="photo-video__subline plain-subline">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -84,7 +85,7 @@
                   <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                  <img class="photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на закате" width="280" height="280">
+                  <img class="photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на закате">
                 </picture>
               </a>
               <figcaption class="photo__info">
@@ -155,6 +156,7 @@
           </div>
         </section>
         <section class="photo-video">
+          <h2 class="visually-hidden">Видео из Седоны</h2>
           <div class="photo-video__header photo-video__header--video">
             <b class="photo-video__headline plain-headline">Всё ещё сомневаетесь?</b>
             <p class="photo-video__subline plain-subline">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
@@ -179,20 +181,20 @@
                   <span></span>
                 </li>
                 <li class="controls__item controls__item--replay">
-                  <svg class="controls__button controls__button--replay" width="16" height="20" aria-labelledby="title">
-                    <title>Повторить</title>
+                  <svg class="controls__button controls__button--replay" width="16" height="20" aria-labelledby="title__replay">
+                    <title id="title__replay">Повторить</title>
                     <use xlink:href="#build-icon-video-replay"></use>
                   </svg>
                 </li>
                 <li class="controls__item controls__item--captions">
-                  <svg class="controls__button controls__button--captions" width="32" height="20" aria-labelledby="title">
-                    <title>Субтитры</title>
+                  <svg class="controls__button controls__button--captions" width="32" height="20" aria-labelledby="title__captions">
+                    <title id="title__captions">Субтитры</title>
                     <use xlink:href="#build-icon-video-captions"></use>
                   </svg>
                 </li>
                 <li class="controls__item controls__item--fullscreen">
-                  <svg class="controls__button controls__button--fullscreen" width="32" height="20" aria-labelledby="title">
-                    <title>Во весь экран</title>
+                  <svg class="controls__button controls__button--fullscreen" width="32" height="20" aria-labelledby="title__fullscreen">
+                    <title id="title__fullscreen">Во весь экран</title>
                     <use xlink:href="#build-icon-video-fullscreen"></use>
                   </svg>
                 </li>
@@ -210,24 +212,24 @@
           <ul class="page-footer__social social">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com" title="Twitter" target="_blank">
-                <svg class="social__icon" width="18" height="14" aria-labelledby="title">
-                  <title>Twitter</title>
+                <svg class="social__icon" width="18" height="14" aria-labelledby="title__twitter">
+                  <title id="title__twitter">Twitter</title>
                   <use xlink:href="#build-icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com" title="Facebook" target="_blank">
-                <svg class="social__icon" width="9" height="18" aria-labelledby="title">
-                  <title>Facebook</title>
+                <svg class="social__icon" width="9" height="18" aria-labelledby="title__facebook">
+                  <title id="title__facebook">Facebook</title>
                   <use xlink:href="#build-icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://youtube.com" title="YouTube" target="_blank">
-                <svg class="social__icon" width="20" height="14" aria-labelledby="title">
-                  <title>YouTube</title>
+                <svg class="social__icon" width="20" height="14" aria-labelledby="title__youtube">
+                  <title id="title__youtube">YouTube</title>
                   <use xlink:href="#build-icon-youtube"></use>
                 </svg>
               </a>
@@ -236,8 +238,8 @@
           <div class="page-footer__copyright copyright">
             <i class="copyright__text plain-subline">Разработано </i>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34" aria-labelledby="title">
-                <title>Продвинутый интенсив HTML Academy</title>
+              <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34" aria-labelledby="title__htmlacademy">
+                <title id="title__htmlacademy">Продвинутый интенсив HTML Academy</title>
                 <use xlink:href="#build-htmlacademy"></use>
               </svg>
             </a>
