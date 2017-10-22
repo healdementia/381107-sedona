@@ -65,7 +65,10 @@
 
     &--error {
       width: 400px;
-      padding: 60px 64px 50px 64px;
+      padding-top: 60px;
+      padding-right: 64px;
+      padding-bottom: 50px;
+      padding-left: 64px;
     }
 
     &--success {
@@ -80,7 +83,10 @@
   }
 
   .popup__container {
-    padding: 60px 110px 0 110px;
+    padding-top: 60px;
+    padding-right: 110px;
+    padding-bottom: 0;
+    padding-left: 110px;
   }
 
   .popup__close-window {

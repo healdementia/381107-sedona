@@ -80,7 +80,6 @@
                 <legend class="form__legend">
                   Представьтесь:
                 </legend>
-                  <!-- Поменяла местами поля "Имя" и "Фамилия", поскольку при наличии поля "Отчество" (даже необязательного) это более логичная последовательность - в противном случае получается "Пётр Иванов Александрович", что противоречит правилам русского языка и вредит благозвучию (я осознаю, что в реальной жизни подобное необходимо согласовывать с коллегами и заказчиком) -->
                 <div class="form__group form__group--fullname">
                   <label class="form__label form__label--text" for="lastname">Фамилия*:</label>
                   <input class="form__input form__input--text" type="text" id="lastname" name="lastname" placeholder="Иванов" required>
@@ -119,7 +118,7 @@
                 </legend>
                 <div class="form__group form__group--impression">
                   <input class="form__input form__input--radio visually-hidden" type="radio" id="positive" name="impression" value="positive" checked>
-                  <label class=" form__label form__label--radio" for="positive">Скорее положительное</label>
+                  <label class="form__label form__label--radio" for="positive">Скорее положительное</label>
                 </div>
                 <div class="form__group form__group--impression">
                   <input class="form__input form__input--radio visually-hidden" type="radio" id="negative" name="impression" value="negative">

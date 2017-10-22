@@ -1,5 +1,5 @@
 .page-footer {
-  @include mobile-container;
+  @include mobile-container();
   background-color: $bg;
 }
 
@@ -57,12 +57,12 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    @include tablet-container;
+    @include tablet-container();
     padding-top: 10px;
   }
 
   .page-footer__wrapper {
-    @include tablet-content;
+    @include tablet-content();
     height: 120px;
     flex-direction: row;
   }
@@ -85,12 +85,15 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    @include desktop-container;
-    padding: 10px 0 0 0;
+    @include desktop-container();
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
   }
 
   .page-footer__wrapper {
-    @include desktop-container;
+    @include desktop-container();
     padding: 0;
     justify-content: space-around;
   }

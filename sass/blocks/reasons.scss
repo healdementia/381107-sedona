@@ -31,7 +31,10 @@
   }
 
   &--short {
-    padding: 32px 15px 15px 15px;
+    padding-top: 32px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     border-bottom: 1px solid $reasons-border;
   }
 
@@ -70,7 +73,7 @@
 
 //////////// m o b i l e . o n l y ////////////
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width-max) {
   .reasons__header {
     padding-bottom: 0;
   }
@@ -132,7 +135,10 @@
 
   .reasons__item--short {
     width: 256px;
-    padding: 46px 46px 35px 46px;
+    padding-top: 46px;
+    padding-right: 46px;
+    padding-bottom: 35px;
+    padding-left: 46px;
     border: none;
   }
 }

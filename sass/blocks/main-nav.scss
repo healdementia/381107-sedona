@@ -1,3 +1,5 @@
+//////////// b a s i c   &   m o b i l e ////////////
+
 .main-nav {
   background-color: $bg;
 }
@@ -44,11 +46,13 @@
   fill: $theme-color;
 }
 
+//////////// m o b i l e . o n l y ////////////
+
 @media (max-width: $mobile-width-max) {
   .main-nav__item {
     position: relative;
 
-    @include headline;
+    @include headline();
     line-height: 40px;
     text-align: center;
     background-color: $button-bg;

@@ -1,5 +1,5 @@
 .page-header {
-  @include mobile-container;
+  @include mobile-container();
 }
 
 .page-header__promo {
@@ -9,7 +9,7 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
-  background-size: contain, cover;
+  background-size: 104%, cover;
   box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -24,7 +24,7 @@
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, bottom;
-  background-size: contain, 250%;
+  background-size: 104%, 250%;
   box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -48,12 +48,14 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    @include tablet-container;
+    @include tablet-container();
   }
 
   .page-header__promo {
     min-height: 518px;
+    padding-top: 78px;
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: contain, cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
@@ -85,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    @include desktop-container;
+    @include desktop-container();
   }
 
   .page-header__promo {

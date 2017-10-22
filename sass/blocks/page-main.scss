@@ -1,5 +1,5 @@
 .page-main {
-  @include mobile-container;
+  @include mobile-container();
   padding: 0;
   background-color: $bg;
 }
@@ -8,7 +8,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    @include tablet-container;
+    @include tablet-container();
   }
 }
 
@@ -16,6 +16,6 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
-    @include desktop-container;
+    @include desktop-container();
   }
 }

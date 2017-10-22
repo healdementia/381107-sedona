@@ -1,5 +1,5 @@
 .form__fieldset {
-  @include mobile-content;
+  @include mobile-content();
   margin: 0;
   padding-top: 22px;
   padding-bottom: 26px;
@@ -33,6 +33,7 @@ textarea:-moz-placeholder {
 
 .form__legend {
   @include headline();
+  width: 100%;
   padding-top: 20px;
   text-align: center;
   font-size: 18px;
@@ -73,8 +74,6 @@ textarea:-moz-placeholder {
   &:focus,
   &:active {
     background-color: $bg;
-    /* outline: 4px solid $input-hover-bg;
-    outline-offset: -4px; */
     outline: none;
     box-shadow: 0 0 0 4px $input-hover-bg inset;
   }
@@ -165,10 +164,6 @@ textarea:-moz-placeholder {
   display: none;
 }
 
-/* .form__input--radio {
-  display: none;
-} */
-
 .form__label--radio {
   display: flex;
   align-items: center;
@@ -222,10 +217,6 @@ textarea:-moz-placeholder {
   }
 }
 
-/* .form__input--checkbox {
-  display: none;
-} */
-
 .form__label--checkbox {
   display: flex;
   align-items: center;
@@ -275,7 +266,7 @@ textarea:-moz-placeholder {
 
 @media (min-width: $tablet-width) {
   .form {
-    @include tablet-content;
+    @include tablet-content();
     display: flex;
     flex-wrap: wrap;
   }
@@ -444,7 +435,7 @@ textarea:-moz-placeholder {
 
 @media (min-width: $desktop-width) {
   .form {
-    @include desktop-content;
+    @include desktop-content();
   }
 
   .form__fieldset {

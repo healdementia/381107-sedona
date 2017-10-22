@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .gallery {
-    @include tablet-content;
+    @include tablet-content();
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -45,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    @include desktop-container;
+    @include desktop-container();
     padding: 0;
   }
 

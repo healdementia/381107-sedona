@@ -1,11 +1,13 @@
+//////////// b a s i c   &   m o b i l e ////////////
+
 .true-town__info {
-  @include mobile-content;
+  @include mobile-content();
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
 .true-town__list {
-  @include mobile-content;
+  @include mobile-content();
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: $bg;
@@ -37,7 +39,7 @@
 
 //////////// m o b i l e . o n l y ////////////
 
-@media (max-width: 767px) {
+@media (max-width: $mobile-width-max) {
   .true-town__info {
     padding-top: 80px;
     background-image: url("../img/bg-triangle.svg");

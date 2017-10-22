@@ -1,5 +1,5 @@
 .call-to-action {
-  @include mobile-content;
+  @include mobile-content();
   padding-top: 32px;
   padding-bottom: 48px;
   text-align: center;
@@ -27,7 +27,10 @@
 @media (min-width: $tablet-width) {
   .call-to-action {
     width: auto;
-    padding: 55px 155px 51px 155px;
+    padding-top: 55px;
+    padding-right: 155px;
+    padding-bottom: 51px;
+    padding-left: 155px;
     box-sizing: border-box;
   }
 
@@ -48,6 +51,9 @@
 
 @media (min-width: $desktop-width) {
   .call-to-action {
-    padding: 55px 370px 65px 370px;
+    padding-top: 55px;
+    padding-right: 370px;
+    padding-bottom: 65px;
+    padding-left: 370px;
   }
 }
